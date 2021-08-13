@@ -1,0 +1,17 @@
+.bg-image {
+    background: url("https://cdn.pixabay.com/photo/2014/09/05/18/32/old-books-436498_960_720.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 500px;
+}
+
+.text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.footer {
+    background-color: rgb(94,48,16);
+    height: 180px;
+}
