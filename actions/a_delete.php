@@ -4,7 +4,7 @@ require_once 'db_connect.php';
 if ($_POST) {
    $id = $_POST['id'];
    $img = $_POST['img'];
-   ($img =="product.png")?: unlink("../img/$img");
+   ($img =="book.jpg")?: unlink("../img/$img");
 
    $sql = "DELETE FROM books WHERE id = {$id}";
    if (mysqli_query($connect, $sql) === TRUE) {
