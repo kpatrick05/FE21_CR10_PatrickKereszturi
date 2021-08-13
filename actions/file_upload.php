@@ -2,8 +2,7 @@
 function file_upload($img) {
    $result = new stdClass();//this object will carry status from file upload
    $result->fileName = 'book.jpg';
-   $result->error = 1;//it could also be a boolean true/false
-   //collect data from object $img
+   $result->error = 1;
    $fileName = $img["name"];
    $fileType = $img["type"];
    $fileTmpName = $img["tmp_name"];
@@ -17,8 +16,7 @@ function file_upload($img) {
    } else {
        if (in_array($fileExtension, $filesAllowed)) {
            if ($fileError === 0) {
-               if ($fileSize < 500000) { //500kb this number is in bytes
-                   //it gives a file name based microseconds
+               if ($fileSize < 500000) { //500kb 
                    $fileNewName = uniqid('') . "." . $fileExtension; // 1233343434.jpg i.e
                    $destination = "../img/$fileNewName";
                    if (move_uploaded_file($fileTmpName, $destination)) {
