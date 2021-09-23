@@ -39,4 +39,4 @@ Open bugs to fix:
 if both URL and File Upload are provided, an error message should appear
 Feedback welcome!
 
-Cheers, Michael
+Cheers, Patrick
